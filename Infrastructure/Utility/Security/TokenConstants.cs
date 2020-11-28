@@ -39,16 +39,7 @@ namespace PromoCodes_main.Infrastructure.Utility.Security
         }
 
 
-        public static string Issuer
-        {
-            get
-            {
-
-
-                return "busayo-demo";
-
-            }
-        }
+       
 
         public static string Audience
         {
@@ -71,7 +62,7 @@ namespace PromoCodes_main.Infrastructure.Utility.Security
         {
             get
             {
-                return true;
+                return false;
             }
         }
 
@@ -79,7 +70,7 @@ namespace PromoCodes_main.Infrastructure.Utility.Security
         {
             get
             {
-                return true;
+                return false;
             }
         }
 
@@ -91,13 +82,7 @@ namespace PromoCodes_main.Infrastructure.Utility.Security
             }
         }
 
-        public static bool ValidateLifeTime
-        {
-            get
-            {
-                return true;
-            }
-        }
+       
 
     }
 }

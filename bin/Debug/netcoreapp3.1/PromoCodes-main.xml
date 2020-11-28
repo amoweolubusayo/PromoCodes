@@ -4,5 +4,18 @@
         <name>PromoCodes-main</name>
     </assembly>
     <members>
+        <member name="M:PromoCodes_main.Controllers.PromoController.GetAll">
+            <summary>
+            Gets all promo services
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PromoCodes_main.Controllers.PromoController.ActivateBonus(PromoCodes_main.Application.Commands.ActivateBonusCommand)">
+            <summary>
+            Activates Bonus
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

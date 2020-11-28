@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,6 +12,12 @@ namespace PromoCodes_main
 {
     public class Program
     {
+
+         public static IConfiguration Configuration { get; } = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true)
+            .AddEnvironmentVariables()
+            .Build();
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
