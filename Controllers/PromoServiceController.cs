@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PromoCodes_main.Application.Queries;
 using PromoCodes_main.Application.Commands;
+using PromoCodes_main.Application.Models;
 namespace PromoCodes_main.Controllers
 {
     [ApiController]
@@ -20,6 +21,15 @@ namespace PromoCodes_main.Controllers
         {
             _mediator = mediator;
         }
+
+         List<TemppData> promoServices = new List<TemppData>();
+        public PromoServiceController() { }
+
+        public PromoServiceController(List<TemppData> promoServices)
+        {
+            this.promoServices = promoServices;
+        }
+
         /// <summary>
         /// Gets all promo services
         /// </summary>

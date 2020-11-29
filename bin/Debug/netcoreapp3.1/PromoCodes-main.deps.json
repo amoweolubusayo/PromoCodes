@@ -24,6 +24,7 @@
           "Serilog.Sinks.Debug": "1.0.1",
           "Swashbuckle.AspNetCore": "5.6.3",
           "System.IdentityModel.Tokens.Jwt": "6.8.0",
+          "System.Web.Http": "4.0.0",
           "coverlet.collector": "1.2.0"
         },
         "runtime": {
@@ -1956,6 +1957,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Web.Http/4.0.0": {},
       "System.Windows.Extensions/4.7.0": {
         "dependencies": {
           "System.Drawing.Common": "4.7.0"
@@ -3298,6 +3300,13 @@
       "sha512": "sha512-Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
       "path": "system.threading.timer/4.3.0",
       "hashPath": "system.threading.timer.4.3.0.nupkg.sha512"
+    },
+    "System.Web.Http/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KDoOc/zHxA4tdnXsazg8+Mvqby7IruaFS1NQQd3LgWK0SplCeHYvGAv+q+OlmNeedL1cugnglHsp+K6WzX97aQ==",
+      "path": "system.web.http/4.0.0",
+      "hashPath": "system.web.http.4.0.0.nupkg.sha512"
     },
     "System.Windows.Extensions/4.7.0": {
       "type": "package",

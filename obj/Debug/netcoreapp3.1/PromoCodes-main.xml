@@ -29,7 +29,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:PromoCodes_main.Controllers.UserController.GetAll">
+        <member name="M:PromoCodes_main.Controllers.UserController.GetAllUsers">
             <summary>
             Gets lists of all users
             </summary>

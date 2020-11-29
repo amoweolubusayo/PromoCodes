@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PromoCodes_main.Application.Models;
 using PromoCodes_main.Controllers;
+using Microsoft.AspNetCore.Mvc;
 using PromoCodes_main.Application.Entities;
 
 namespace PromoCodes_main_tests
@@ -13,13 +14,15 @@ namespace PromoCodes_main_tests
     public class TestUserController
     {
         [TestMethod]
-        public void GetAllUsers_ShouldReturnAllUsers()
+        public async void GetAllUsers_ShouldReturnAllUsers()
         {
             var users = GetTestUsers();
             var controller = new UserController(users);
-            var result = controller.GetAll() as List<User>;
-            Assert.AreEqual(users.Count, result.Count);
+            var result = controller.GetAllUsers() as IActionResult;
+            Assert.AreEqual(users.Count, result);
         }
+
+
 
         private List<User> GetTestUsers()
         {

@@ -2918,6 +2918,9 @@
           "ref/netstandard1.2/System.Threading.Timer.dll": {}
         }
       },
+      "System.Web.Http/4.0.0": {
+        "type": "package"
+      },
       "System.Windows.Extensions/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -9163,6 +9166,18 @@
         "system.threading.timer.nuspec"
       ]
     },
+    "System.Web.Http/4.0.0": {
+      "sha512": "KDoOc/zHxA4tdnXsazg8+Mvqby7IruaFS1NQQd3LgWK0SplCeHYvGAv+q+OlmNeedL1cugnglHsp+K6WzX97aQ==",
+      "type": "package",
+      "path": "system.web.http/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "System.Web.Http.dll",
+        "system.web.http.4.0.0.nupkg.sha512",
+        "system.web.http.nuspec"
+      ]
+    },
     "System.Windows.Extensions/4.7.0": {
       "sha512": "CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "type": "package",
@@ -9451,6 +9466,7 @@
       "Serilog.Sinks.Debug >= 1.0.1",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "System.IdentityModel.Tokens.Jwt >= 6.8.0",
+      "System.Web.Http >= 4.0.0",
       "coverlet.collector >= 1.2.0"
     ]
   },
@@ -9558,6 +9574,10 @@
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
             "version": "[6.8.0, )"
+          },
+          "System.Web.Http": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           },
           "coverlet.collector": {
             "target": "Package",

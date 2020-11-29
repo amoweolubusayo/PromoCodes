@@ -105,6 +105,10 @@
               "target": "Package",
               "version": "[6.8.0, )"
             },
+            "System.Web.Http": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[1.2.0, )"

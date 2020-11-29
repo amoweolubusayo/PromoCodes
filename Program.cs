@@ -23,6 +23,8 @@ namespace PromoCodes_main
         {
             CreateHostBuilder(args).Build().Run();
             new TestUserController().GetAllUsers_ShouldReturnAllUsers();
+            new TestPromoServiceController().GetAllPromoServices_ShouldReturnAllPromoServices();
+            new TestPromoServiceController().GetPromoServices_ShouldReturnCorrectPromoService();
 
         }
 

@@ -61,7 +61,7 @@ namespace PromoCodes_main.Controllers
         [ProducesResponseType(400)]
         [Authorize]
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAllUsers()
         {
             var users = _userService.GetAll();
             return Ok(users);
