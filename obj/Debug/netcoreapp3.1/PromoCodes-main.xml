@@ -4,17 +4,35 @@
         <name>PromoCodes-main</name>
     </assembly>
     <members>
-        <member name="M:PromoCodes_main.Controllers.PromoController.GetAll">
+        <member name="M:PromoCodes_main.Controllers.PromoServiceController.GetAll">
             <summary>
             Gets all promo services
             </summary>
             <returns></returns>
         </member>
-        <member name="M:PromoCodes_main.Controllers.PromoController.ActivateBonus(PromoCodes_main.Application.Commands.ActivateBonusCommand)">
+        <member name="M:PromoCodes_main.Controllers.PromoServiceController.SearchServiceByName(System.String)">
+            <summary>
+            Searches services by name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PromoCodes_main.Controllers.PromoServiceController.ActivateBonus(PromoCodes_main.Application.Commands.ActivateBonusCommand)">
             <summary>
             Activates Bonus
             </summary>
             <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PromoCodes_main.Controllers.UserController.Authenticate(PromoCodes_main.Application.Models.AuthRequest)">
+            <summary>
+            Authenticate a user and generates an authorization token 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PromoCodes_main.Controllers.UserController.GetAll">
+            <summary>
+            Gets lists of all users
+            </summary>
             <returns></returns>
         </member>
     </members>

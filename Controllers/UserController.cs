@@ -1,16 +1,17 @@
 using System;
-using System.Data;
 using System.Collections.Generic;
+using System.Data;
 using System.Net;
 using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PromoCodes_main.Application.Queries;
 using PromoCodes_main.Application.Commands;
+using PromoCodes_main.Application.Models;
+using PromoCodes_main.Application.Queries;
 using PromoCodes_main.Infrastructure.Utility.Security;
 using PromoCodes_main.Services;
-using PromoCodes_main.Application.Models;
+using PromoCodes_main.Application.Entities;
 
 namespace PromoCodes_main.Controllers
 {
@@ -25,6 +26,21 @@ namespace PromoCodes_main.Controllers
             _userService = userService;
         }
 
+        List<User> users = new List<User>();
+        public UserController() { }
+
+        public UserController(List<User> users)
+        {
+            this.users = users;
+        }
+
+        /// <summary>
+        /// Authenticate a user and generates an authorization token 
+        /// </summary>
+        /// <returns></returns>
+        [Produces("application/json")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
         [HttpPost("authenticate")]
         public IActionResult Authenticate(AuthRequest model)
         {
@@ -36,6 +52,13 @@ namespace PromoCodes_main.Controllers
             return Ok(response);
         }
 
+        /// <summary>
+        /// Gets lists of all users
+        /// </summary>
+        /// <returns></returns>
+        [Produces("application/json")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
         [Authorize]
         [HttpGet]
         public IActionResult GetAll()
