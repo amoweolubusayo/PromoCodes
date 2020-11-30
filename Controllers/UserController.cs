@@ -21,19 +21,18 @@ namespace PromoCodes_main.Controllers
     {
         private IUserService _userService;
 
-        public UserController(IUserService userService)
+        public UserController(IUserService userService) 
         {
             _userService = userService;
         }
 
-        List<User> users = new List<User>();
-        public UserController() { }
+        // List<User> _users = new List<User>();
+        // public UserController(List<User> users)
+        // {
+        //     this._users = users;
+        // }
 
-        public UserController(List<User> users)
-        {
-            this.users = users;
-        }
-
+    
         /// <summary>
         /// Authenticate a user and generates an authorization token 
         /// </summary>

@@ -19,6 +19,7 @@ using PromoCodes_main.Infrastructure.Persistence;
 using PromoCodes_main.Infrastructure.Swagger;
 using PromoCodes_main.Infrastructure.Utility.Security;
 using PromoCodes_main.Services;
+using PromoCodes_main.Application.Entities;
 
 
 

@@ -1,7 +1,3 @@
-/Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.csprojAssemblyReference.cache
-/Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.AssemblyInfoInputs.cache
-/Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.AssemblyInfo.cs
-/Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.csproj.CoreCompileInputs.cache
 /Users/oluamowe/Downloads/PromoCodes-main/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 /Users/oluamowe/Downloads/PromoCodes-main/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 /Users/oluamowe/Downloads/PromoCodes-main/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -152,8 +148,14 @@
 /Users/oluamowe/Downloads/PromoCodes-main/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb
 /Users/oluamowe/Downloads/PromoCodes-main/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
 /Users/oluamowe/Downloads/PromoCodes-main/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.csprojAssemblyReference.cache
+/Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.AssemblyInfoInputs.cache
+/Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.AssemblyInfo.cs
+/Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.csproj.CoreCompileInputs.cache
 /Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.csproj.CopyComplete
 /Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.dll
 /Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.xml
 /Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.pdb
 /Users/oluamowe/Downloads/PromoCodes-main/obj/Debug/netcoreapp3.1/PromoCodes-main.genruntimeconfig.cache
+/Users/oluamowe/Downloads/PromoCodes-main/bin/Debug/netcoreapp3.1/Castle.Core.dll
+/Users/oluamowe/Downloads/PromoCodes-main/bin/Debug/netcoreapp3.1/Moq.dll

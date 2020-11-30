@@ -19,7 +19,7 @@ namespace PromoCodes_main.Services {
     }
 
     public class UserService : IUserService {
-        // users hardcoded for simplicity, store in a db with hashed passwords in production applications
+        // users hardcoded for simplicity
         private List<User> _users = new List<User> {
             new User { Id = 1, FirstName = "Test", LastName = "User", Username = "test", Password = "test" },
             new User { Id = 2, FirstName = "Demo", LastName = "Demo", Username = "demo", Password = "demo" }
@@ -31,6 +31,7 @@ namespace PromoCodes_main.Services {
             _generalSettings = generalSettings.Value;
         }
 
+        public UserService(){}
         public AuthResponse Authenticate (AuthRequest model) {
             var user = _users.SingleOrDefault (x => x.Username == model.Username && x.Password == model.Password);
 

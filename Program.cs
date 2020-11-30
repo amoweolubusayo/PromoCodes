@@ -22,10 +22,6 @@ namespace PromoCodes_main
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-            new TestUserController().GetAllUsers_ShouldReturnAllUsers();
-            new TestPromoServiceController().GetAllPromoServices_ShouldReturnAllPromoServices();
-            new TestPromoServiceController().GetPromoServices_ShouldReturnCorrectPromoService();
-
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

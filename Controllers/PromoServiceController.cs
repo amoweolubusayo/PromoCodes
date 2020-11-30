@@ -22,14 +22,6 @@ namespace PromoCodes_main.Controllers
             _mediator = mediator;
         }
 
-         List<TemppData> promoServices = new List<TemppData>();
-        public PromoServiceController() { }
-
-        public PromoServiceController(List<TemppData> promoServices)
-        {
-            this.promoServices = promoServices;
-        }
-
         /// <summary>
         /// Gets all promo services
         /// </summary>
@@ -65,7 +57,7 @@ namespace PromoCodes_main.Controllers
             return result.Status ? (IActionResult)Ok(result) : BadRequest(result);
         }
 
-          /// <summary>
+        /// <summary>
         /// Activates Bonus
         /// </summary>
         /// <param name="command"></param>
@@ -75,7 +67,7 @@ namespace PromoCodes_main.Controllers
         [ProducesResponseType(400)]
         [HttpPost("activatebonus")]
         [Authorize]
-        public async Task<IActionResult> ActivateBonus([FromBody]ActivateBonusCommand command)
+        public async Task<IActionResult> ActivateBonus([FromBody] ActivateBonusCommand command)
         {
             var result = await _mediator.Send(command);
             return result.Status ? (IActionResult)Ok(result) : BadRequest(result);
