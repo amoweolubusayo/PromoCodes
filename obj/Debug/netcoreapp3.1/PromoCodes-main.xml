@@ -23,6 +23,13 @@
             <param name="command"></param>
             <returns></returns>
         </member>
+        <member name="M:PromoCodes_main.Controllers.PromoServiceController.DeActivateBonus(PromoCodes_main.Application.Commands.DeactivateBonusCommand)">
+            <summary>
+            dectivates bonus (test purposes)
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
         <member name="M:PromoCodes_main.Controllers.UserController.Authenticate(PromoCodes_main.Application.Models.AuthRequest)">
             <summary>
             Authenticate a user and generates an authorization token 

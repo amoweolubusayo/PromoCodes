@@ -73,5 +73,21 @@ namespace PromoCodes_main.Controllers
             return result.Status ? (IActionResult)Ok(result) : BadRequest(result);
         }
 
+         /// <summary>
+        /// dectivates bonus (test purposes)
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        [Produces("application/json")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [HttpPost("deactivatebonus")]
+        [Authorize]
+        public async Task<IActionResult> DeActivateBonus([FromBody] DeactivateBonusCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return result.Status ? (IActionResult)Ok(result) : BadRequest(result);
+        }
+
     }
 }

@@ -21,6 +21,7 @@ namespace PromoCodes_main.Application.Queries
         public string Name { get; set; }
         public string Description { get; set; }
         public string PromoCode { get; set; }
+        public bool IsActive { get; set; }
 
 
     }
@@ -42,7 +43,8 @@ namespace PromoCodes_main.Application.Queries
             {
                 Name = x.RefName,
                 Description = x.Description,
-                PromoCode = x.Codes
+                PromoCode = x.Codes,
+                IsActive = x.ActivationStatus
             }).ToList();
             if (promoservices == null)
             {
